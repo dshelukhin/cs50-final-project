@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' type="text/css" href='style.css'/>
+	<link rel='stylesheet' type="text/css" href='d3/nv.d3.css'/>
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="d3/d3.min.js"></script>
+	<script src="d3/topojson.js"></script>
+	<script src="d3/d3.geo.projection.min.js"></script>
+	<script src="d3/queue.v1.min.js"></script>
+	<script src="d3/nv.d3.min.js"></script>
+	<title>CS50 Econ Data Visualizer</title>
+</head>
+
+<body>
+
+<div class="header">
+	<div class="container">
+
+		<p class="headerText">IMF World Economic Data Visualizer</p>
+
+		<div class="btn1 dropdown">
+			<button class="dropbtn">Choose Chart Style</button>
+			<div class="dropdown-content">
+				<button class="dropbtnlist option1">Line Chart</button>
+				<button class="dropbtnlist option2">Bar Chart</button>
+			</div>		
+		</div>
+
+		<div class="btn2 dropdown">
+			<button class="dropbtn">Choose Statistic</button>
+			<div class="dropdown-content">
+				<button class="dropbtnlist option1">GDP Levels</button>
+				<button class="dropbtnlist option2">Current Account Balance</button>
+				<button class="dropbtnlist option3">Inflation Rate</button>
+				<button class="dropbtnlist option4">Debt-to-GDP Ratio</button>
+				<button class="dropbtnlist option5">Unemployment</button>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<div id="mapContainer"></div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
